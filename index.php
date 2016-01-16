@@ -1,3 +1,23 @@
+<?php
+    $xml = file_get_contents("http://gps.buienradar.nl/getrr.php?lat=52.369918&lon=4.8943573");
+    print($xml);
+//    // create curl resource
+//    $ch = curl_init();
+//    
+//    // set url
+//    curl_setopt($ch, CURLOPT_URL, "http://gps.buienradar.nl/getrr.php?lat=52.369918&lon=4.8943573");
+//    
+//    //return the transfer as a string
+//    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//    
+//    // $output contains the output string
+//    $output = curl_exec($ch);
+//    print($output);
+//    
+//    // close curl resource to free up system resources
+//    curl_close($ch);
+?>
+
 <html>
 <head>
 	<title>Magic Mirror</title>
@@ -33,6 +53,7 @@
 <script src="js/calendar/calendar.js" type="text/javascript"></script>
 <script src="js/compliments/compliments.js" type="text/javascript"></script>
 <script src="js/weather/weather.js" type="text/javascript"></script>
+<script src="js/weather/buie.js" type="text/javascript"></script>
 <script src="js/time/time.js" type="text/javascript"></script>
 <script src="js/news/news.js" type="text/javascript"></script>
 <script src="js/main.js?nocache=<?php echo md5(microtime()) ?>"></script>
