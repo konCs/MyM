@@ -20,7 +20,7 @@ class Mirror extends CI_Controller {
 	 */
 	public function index() {	
 		$this->load->model('mirror_model');
-		$data['blah'] = $this->mirror_model->get_rain_data();
+		$data['rain'] = $this->mirror_model->get_rain_data();
 		
 		$this->load->view('mirror', $data);
 	}

@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 	var lastCompliment;
 	var compliment;
 
-    //moment.locale(config.lang);
+    moment.locale(config.lang);
 
 	//connect do Xbee monitor
 	// var socket = io.connect('http://rpi-alarm.local:8082');
@@ -46,5 +46,7 @@ jQuery(document).ready(function($) {
 	// });
 
 	time.init();
+	
+	weather.init();
 
 });

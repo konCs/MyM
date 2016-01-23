@@ -21,7 +21,7 @@ class Mirror_model extends CI_Model {
 		
 	    // close curl resource to free up system resources
 		curl_close($ch);
-		
+		//$output = file_get_contents("http://gps.buienradar.nl/getrr.php?lat=52.369918&lon=4.8943573");
 		return $output;
 	}
 }
